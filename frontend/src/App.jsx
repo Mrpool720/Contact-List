@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
+import ContactList from './ContactList'
 import './App.css'
 
 function App() {
-
   const [contacts, setContacts] = useState([])
 
   useEffect(() => {
@@ -14,13 +14,10 @@ function App() {
     const data = await response.json()
     setContacts(data.contacts)
     console.log(data.contacts)
+
   }
 
-  return (
-    <>
-      
-    </>
-  )
+  return <ContactList contacts={contacts}/>
 }
 
 export default App
