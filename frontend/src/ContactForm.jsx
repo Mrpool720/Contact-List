@@ -57,7 +57,7 @@ const ContactForm = ({ existingContact = {}, updateCallback }) => {
             <div>
                 <label htmlFor="phone">Phone:</label>
                 <input
-                    type="number" 
+                    type="number"  
                     id="phone"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
